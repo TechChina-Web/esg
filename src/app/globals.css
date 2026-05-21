@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light theme ── */
+:root {
+  --surface: 0 0% 100%;
+  --surface-raised: 220 14% 96%;
+  --surface-overlay: 0 0% 100%;
+  --surface-sunken: 220 16% 98%;
+  --content: 222 20% 9%;
+  --content-muted: 220 8% 40%;
+  --content-subtle: 220 6% 56%;
+  --content-disabled: 220 6% 76%;
+  --edge: 222 14% 88%;
+  --edge-subtle: 220 10% 93%;
+  --edge-strong: 222 14% 78%;
+}
+
+/* ── Dark theme ── */
+.dark {
+  --surface: 225 30% 3%;
+  --surface-raised: 225 22% 6%;
+  --surface-overlay: 225 18% 8%;
+  --surface-sunken: 225 24% 4%;
+  --content: 220 15% 90%;
+  --content-muted: 220 6% 58%;
+  --content-subtle: 220 5% 40%;
+  --content-disabled: 220 4% 28%;
+  --edge: 225 14% 13%;
+  --edge-subtle: 225 10% 10%;
+  --edge-strong: 225 14% 20%;
+}
+
+/* ── Global ── */
+*,
+::before,
+::after {
+  border-color: hsl(var(--edge));
+}
+
+html,
+body {
+  background: hsl(var(--surface));
+  color: hsl(var(--content));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "ss01", "cv11", "cv02", "cv03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.22);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--edge-strong));
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--content-subtle));
+}
+
+/* ── Glassmorphism (subtle) ── */
+@layer utilities {
+  .glass {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.01)
+    );
+    backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    border: 1px solid hsl(var(--edge-subtle));
+  }
+  .dark .glass {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.025),
+      rgba(255, 255, 255, 0.005)
+    );
+    border: 1px solid hsl(var(--edge));
+  }
+  .glass-strong {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.02)
+    );
+    backdrop-filter: blur(24px) saturate(130%);
+    -webkit-backdrop-filter: blur(24px) saturate(130%);
+    border: 1px solid hsl(var(--edge-strong));
+  }
+  .dark .glass-strong {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.01)
+    );
+    border: 1px solid hsl(var(--edge));
+  }
+
+  /* Text gradients — only for hero emphasis, not general usage */
+  .text-gradient-brand {
+    background: linear-gradient(135deg, #C70512, #F43F5E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-esg {
+    background: linear-gradient(135deg, #14B8A6 0%, #10B981 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Skeleton loading */
+  .skeleton {
+    @apply relative overflow-hidden rounded-md;
+    background: hsl(var(--surface-raised));
+  }
+  .skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.03),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.4s linear infinite;
+  }
+
+  .ring-soft {
+    box-shadow: 0 0 0 1px hsl(var(--edge-strong));
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  /* Subtle gradient bar backgrounds */
+  .bar-esg {
+    background: linear-gradient(90deg, #14B8A6, #10B981);
+  }
+  .bar-brand {
+    background: linear-gradient(90deg, #C70512, #F43F5E);
+  }
+}
+
+/* ── Aurora — ultra-subtle, no red ── */
+.aurora-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+      70% 60% at 15% 5%,
+      rgba(20, 184, 166, 0.05),
+      transparent 55%
+    ),
+    radial-gradient(
+      50% 70% at 85% 25%,
+      rgba(99, 102, 241, 0.04),
+      transparent 55%
+    ),
+    radial-gradient(
+      60% 50% at 45% 90%,
+      rgba(16, 185, 129, 0.04),
+      transparent 55%
+    );
+  filter: blur(64px);
+}
+
+/* ── Focus ── */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid #C70512;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
