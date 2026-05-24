@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import * as React from "react";
 import { Topbar } from "@/components/app/topbar";
 import { tenders, suppliers } from "@/lib/mock-data";
@@ -220,11 +220,11 @@ function AIDocumentPanel() {
           </div>
           <Badge variant={done ? "emerald" : "teal"}>{done ? "Complete" : running ? "Streaming" : "Idle"}</Badge>
         </div>
-        <div className="mt-4 rounded-xl border bg-black/40 dark:bg-black/30 p-4 font-mono text-[12.5px] text-emerald-300/95 min-h-[220px] whitespace-pre-wrap">
+        <div className="mt-4 rounded-xl border border-zinc-200 dark:border-zinc-800/60 bg-zinc-50 dark:bg-zinc-950 p-4 font-mono text-[12.5px] text-emerald-700 dark:text-emerald-300/95 min-h-[220px] whitespace-pre-wrap">
           {text || (
-            <span className="text-content-subtle">Click "Run AI analysis" to stream a structured ESG summary…</span>
+            <span className="text-zinc-500">Click "Run AI analysis" to stream a structured ESG summary…</span>
           )}
-          {running && <span className="inline-block w-2 h-4 align-middle bg-emerald-300/80 ml-0.5 animate-pulse" />}
+          {running && <span className="inline-block w-2 h-4 align-middle bg-emerald-600 dark:bg-emerald-300/80 ml-0.5 animate-pulse" />}
         </div>
 
         {/* Suggested actions */}
