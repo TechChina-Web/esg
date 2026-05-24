@@ -2,6 +2,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   ArrowRight,
   Leaf,
@@ -70,8 +71,14 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-edge backdrop-blur-xl bg-surface/70">
       <div className="container flex items-center h-14">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="size-8 rounded-lg bg-brand-red text-white grid place-items-center font-black text-sm">
-            H
+          <div className="size-10 rounded-lg bg-white grid place-items-center">
+            <Image
+              src="/esg/bank-hsbc.svg"
+              alt="HSBC Logo"
+              width={32}
+              height={32}
+              className="size-8"
+            />
           </div>
           <div className="leading-tight">
             <div className="text-sm font-semibold">HSBC</div>
@@ -604,8 +611,14 @@ function Footer() {
       <div className="container py-10 grid sm:grid-cols-4 gap-8 text-sm">
         <div>
           <div className="flex items-center gap-2">
-            <div className="size-7 rounded-md bg-brand-red text-white grid place-items-center font-black text-xs">
-              H
+            <div className="size-9 rounded-md bg-white grid place-items-center">
+              <Image
+                src="/esg/bank-hsbc.svg"
+                alt="HSBC Logo"
+                width={64}
+                height={64}
+                className="size-16"
+              />
             </div>
             <div className="font-semibold text-content">HSBC ESG Platform</div>
           </div>

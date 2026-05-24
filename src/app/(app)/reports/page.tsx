@@ -3,6 +3,7 @@ import { Topbar } from "@/components/app/topbar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { EmissionsAreaChart } from "@/components/charts/emissions-area-chart";
 import { Download, FileText, Mail, Printer, Share2 } from "lucide-react";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
@@ -60,7 +61,15 @@ export default function ReportsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <div className="flex items-center gap-2">
-                  <div className="size-7 rounded-md bg-brand-red text-white grid place-items-center font-black text-sm">H</div>
+                  <div className="size-9 rounded-md bg-white grid place-items-center">
+                    <Image
+                      src="/esg/bank-hsbc.svg"
+                      alt="HSBC Logo"
+                      width={32}
+                      height={32}
+                      className="size-8"
+                    />
+                  </div>
                   <div className="text-xs text-content-muted">HSBC Holdings plc · Group Sustainability</div>
                 </div>
                 <h1 className="mt-3 text-3xl lg:text-4xl font-semibold tracking-tight">ESG Annual Report 2026</h1>
