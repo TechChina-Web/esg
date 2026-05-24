@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   LayoutDashboard,
   FileSearch,
@@ -29,8 +30,14 @@ export function Sidebar() {
     <aside className="hidden lg:flex sticky top-0 h-screen w-[244px] shrink-0 flex-col border-r border-edge bg-surface/70 backdrop-blur-xl">
       {/* Brand */}
       <div className="px-4 pt-5 pb-4 flex items-center gap-2.5">
-        <div className="size-8 rounded-lg bg-brand-red text-white grid place-items-center font-black text-sm">
-          H
+        <div className="size-10 rounded-lg bg-white grid place-items-center">
+          <Image
+            src="/esg/bank-hsbc.svg"
+            alt="HSBC Logo"
+            width={64}
+            height={64}
+            className="size-8"
+          />
         </div>
         <div className="leading-tight min-w-0">
           <div className="text-sm font-semibold truncate">HSBC ESG</div>

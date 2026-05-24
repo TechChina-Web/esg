@@ -100,7 +100,7 @@ export default function CopilotPage() {
           </div>
         </div>
 
-        <div className="lg:col-span-9 rounded-2xl border bg-surface-overlay overflow-hidden flex flex-col" style={{ minHeight: "70vh" }}>
+        <div className="lg:col-span-9 rounded-2xl border bg-surface-overlay overflow-hidden flex flex-col" style={{ height: "80vh" }}>
           <div className="px-4 py-3 border-b flex items-center gap-2">
             <span className="size-7 rounded-full bg-esg-gradient grid place-items-center text-[10px] font-bold text-white">AI</span>
             <div>
