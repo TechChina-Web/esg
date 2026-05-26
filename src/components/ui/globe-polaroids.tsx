@@ -18,8 +18,8 @@ interface GlobePolaroidsProps {
 }
 
 const officeMarkers: PolaroidMarker[] = [
-  { id: "office-hongkong", location: [22.28, 114.17], image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop", caption: "Hong kong Office", rotate: -5 },
-  { id: "office-shanghai", location: [31.23, 121.50], image: "https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=120&h=120&fit=crop", caption: "Shanghai Office", rotate: 4 },
+  
+  { id: "office-hongkong", location: [22.28, 114.17], image: "https://images.unsplash.com/photo-1689899915637-a950306e781e?w=120&h=120&fit=crop", caption: "Hong Kong Office", rotate: -5 },
   { id: "office-london", location: [51.51, -0.13], image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=120&h=120&fit=crop", caption: "London Office", rotate: -3 },
   { id: "office-sydney", location: [-33.87, 151.21], image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=120&h=120&fit=crop", caption: "Sydney Office", rotate: 6 },
   { id: "office-newyork", location: [40.71, -74.01], image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=120&h=120&fit=crop", caption: "New York Office", rotate: -4 },
