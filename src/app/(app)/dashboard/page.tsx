@@ -6,7 +6,7 @@ import { ESGScoreRing } from "@/components/charts/esg-score-ring";
 import { EmissionsAreaChart } from "@/components/charts/emissions-area-chart";
 import { EnergyWaterChart } from "@/components/charts/energy-water-chart";
 import { SupplyDamageChart } from "@/components/charts/supply-damage-chart";
-import { OfficeGlobe } from "@/components/visuals/office-globe";
+import { GlobePolaroids } from "@/components/ui/globe-polaroids";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -318,8 +318,8 @@ function OverviewTab() {
           <Badge variant="teal"><MapPin className="size-3" /> 10 cities</Badge>
         </div>
         <div className="grid place-items-center">
-          <div className="hidden md:block"><OfficeGlobe size={380} /></div>
-          <div className="md:hidden"><OfficeGlobe size={260} /></div>
+          <div className="hidden md:block"><GlobePolaroids className="w-[380px]" /></div>
+          <div className="md:hidden"><GlobePolaroids className="w-[260px]" /></div>
         </div>
       </motion.section>
 
@@ -429,8 +429,8 @@ function BuildingsTab() {
           <SectionLabel eyebrow="Office network" title="10 cities · 58 offices" />
         </div>
         <div className="grid place-items-center">
-          <div className="hidden md:block"><OfficeGlobe size={300} /></div>
-          <div className="md:hidden"><OfficeGlobe size={220} /></div>
+          <div className="hidden md:block"><GlobePolaroids className="w-[300px]" /></div>
+          <div className="md:hidden"><GlobePolaroids className="w-[220px]" /></div>
         </div>
       </motion.section>
 
