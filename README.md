@@ -1,4 +1,4 @@
-# HSBC ESG Intelligent Sustainability Supply Chain Platform
+# Supplier Net Zero Accelerator
 
 > AI-powered Net-Zero supply chain intelligence — a frontend-only, Hackathon-grade demo.
 

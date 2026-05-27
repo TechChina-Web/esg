@@ -51,7 +51,7 @@ export function Topbar({ title, subtitle }: { title: string; subtitle?: string }
               AY
             </span>
             <span className="text-xs leading-tight text-left">
-              <div className="font-medium text-content">Alex Young</div>
+              <div className="font-medium text-content">Admin </div>
               <div className="text-content-subtle">Sustainability Lead</div>
             </span>
             <ChevronDown className="size-3 text-content-disabled" />

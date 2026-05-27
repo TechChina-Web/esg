@@ -42,7 +42,7 @@ export function Sidebar() {
         <div className="leading-tight min-w-0">
           <div className="text-sm font-semibold truncate">HSBC ESG</div>
           <div className="text-[10px] text-content-disabled tracking-wider uppercase">
-            Sustainability OS
+           Net Zero Accelerator
           </div>
         </div>
       </div>

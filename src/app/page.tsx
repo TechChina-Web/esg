@@ -83,7 +83,7 @@ function Nav() {
           <div className="leading-tight">
             <div className="text-sm font-semibold">HSBC</div>
             <div className="text-[10px] text-content-subtle tracking-wider uppercase">
-              ESG Platform
+              Net Zero Accelerator
             </div>
           </div>
         </Link>
@@ -110,7 +110,7 @@ function Nav() {
           <ThemeToggle />
           <Link href="/dashboard">
             <Button size="sm" variant="primary" className="gap-1.5 rounded-lg">
-              Launch Platform <ArrowRight className="size-3.5" />
+              Launch Accelerator <ArrowRight className="size-3.5" />
             </Button>
           </Link>
         </div>
@@ -140,7 +140,7 @@ function Hero() {
           <div className="mt-7 flex flex-wrap gap-3">
             <Link href="/dashboard">
               <Button size="lg" variant="primary" className="gap-2 rounded-lg">
-                Open the Platform <ArrowRight className="size-4" />
+                Open Accelerator <ArrowRight className="size-4" />
               </Button>
             </Link>
             <Link href="/copilot">
@@ -588,7 +588,7 @@ function CTA() {
                 variant="secondary"
                 className="bg-white text-brand-red hover:bg-white/90 rounded-lg"
               >
-                Launch the Platform <ArrowRight className="size-4" />
+                Launch Accelerator <ArrowRight className="size-4" />
               </Button>
             </Link>
             <Button
@@ -620,7 +620,7 @@ function Footer() {
                 className="size-16"
               />
             </div>
-            <div className="font-semibold text-content">HSBC ESG Platform</div>
+            <div className="font-semibold text-content">Supplier Net Zero Accelerator</div>
           </div>
           <p className="mt-2 text-content-subtle text-xs">
             © 2026 HSBC Holdings plc. For demonstration purposes only.

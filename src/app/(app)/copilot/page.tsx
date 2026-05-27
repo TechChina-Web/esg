@@ -29,7 +29,7 @@ export default function CopilotPage() {
     {
       id: "m0",
       role: "ai",
-      text: "Hi Alex — I'm your ESG Copilot. Ask me anything about your supply chain, suppliers, carbon, or financing."
+      text: "Hi — I'm your ESG Copilot. Ask me anything about your supply chain, suppliers, carbon, or financing."
     }
   ]);
   const [input, setInput] = React.useState("");
