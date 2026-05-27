@@ -125,7 +125,7 @@ export default function ReportsPage() {
             </div>
 
             <div className="mt-8 text-[11px] text-content-muted flex items-center justify-between border-t pt-3">
-              <span>HSBC ESG Platform · Confidential</span>
+              <span>Supplier Net Zero Accelerator · Confidential</span>
               <span>Page 1 of 86</span>
             </div>
           </div>
