@@ -12,6 +12,7 @@ import {
   BarChart3,
   Settings,
   Globe2,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -101,6 +102,12 @@ export function Sidebar() {
 
       {/* Footer */}
       <div className="px-2.5 pb-4">
+        <Link
+          href="/about"
+          className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-sm text-content-muted hover:bg-surface-raised transition-colors"
+        >
+          <Users className="size-4" /> About
+        </Link>
         <Link
           href="/settings"
           className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-sm text-content-muted hover:bg-surface-raised transition-colors"
