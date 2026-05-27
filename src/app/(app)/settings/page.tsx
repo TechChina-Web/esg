@@ -37,7 +37,7 @@ export default function SettingsPage() {
             <div className="mt-3 flex items-center gap-4">
               <div className="size-16 rounded-full bg-esg-gradient grid place-items-center text-white font-bold text-xl">AY</div>
               <div className="flex-1">
-                <div className="text-base font-semibold">Admin/div>
+                <div className="text-base font-semibold">Admin</div>
                 <div className="text-xs text-content-muted">Sustainability Lead · HSBC Holdings plc</div>
               </div>
               <Button variant="outline">Change avatar</Button>
