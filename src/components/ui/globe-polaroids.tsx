@@ -15,6 +15,7 @@ interface GlobePolaroidsProps {
   markers?: PolaroidMarker[]
   className?: string
   speed?: number
+  dark?: number
 }
 
 const officeMarkers: PolaroidMarker[] = [
@@ -32,6 +33,7 @@ export function GlobePolaroids({
   markers = officeMarkers,
   className = "",
   speed = 0.003,
+  dark = 0,
 }: GlobePolaroidsProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const pointerInteracting = useRef<{ x: number; y: number } | null>(null)
@@ -88,7 +90,7 @@ export function GlobePolaroids({
       globe = createGlobe(canvas, {
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
       width, height: width,
-      phi: 0, theta: 0.2, dark: 0, diffuse: 1.5,
+      phi: 0, theta: 0.2, dark, diffuse: 1.5,
       mapSamples: 16000, mapBrightness: 9,
       baseColor: [1, 1, 1],
       markerColor: [0.4, 0.6, 0.9],
@@ -126,7 +128,7 @@ export function GlobePolaroids({
       if (animationId) cancelAnimationFrame(animationId)
       if (globe) globe.destroy()
     }
-  }, [markers, speed])
+  }, [markers, speed, dark])
 
   return (
     <div className={`relative aspect-square select-none ${className}`}>
