@@ -625,6 +625,11 @@ function Footer() {
           <p className="mt-2 text-content-subtle text-xs">
             © 2026 HSBC Holdings plc. For demonstration purposes only.
           </p>
+          <p className="mt-1 text-xs">
+            <Link href="/about" className="text-content-muted hover:text-content transition-colors">
+              Disclaimer
+            </Link>
+          </p>
         </div>
         {[
           {
