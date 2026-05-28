@@ -62,7 +62,7 @@ export default function FinancingPage() {
             <Badge className="bg-white/15 text-white border-white/20">Pre-qualified</Badge>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight">$420M green facility available</h2>
             <p className="mt-2 text-white/80 max-w-xl text-sm">
-              Based on your ESG composite score of 86.4 and improving carbon trajectory, you qualify for HSBC's premium green-loan tier.
+              Based on your ESG composite score of 86.4 and improving carbon trajectory, you qualify for HSBC&apos;s premium green-loan tier.
             </p>
             <div className="mt-5 grid grid-cols-3 gap-4 max-w-md">
               <Big label="Indicative APR" value="4.32%" />

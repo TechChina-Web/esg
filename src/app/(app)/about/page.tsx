@@ -38,13 +38,13 @@ export default function AboutPage() {
     {
       name: "Jim",
       designation: "Team Member",
-      imageSrc: "https://via.placeholder.com/200",
+      imageSrc: "https://media.licdn.com/dms/image/v2/D5603AQH-CoMlWUlApA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722457435816?e=2147483647&v=beta&t=5kP0C-AnWvKqnQt7xEQDLQdSOPBfb4bXxOBeNMgbyLo",
       socialLinks: [{ icon: Linkedin, href: "#" }],
     },
     {
       name: "Mike Zhong",
       designation: "Team Member",
-      imageSrc: "https://via.placeholder.com/200",
+      imageSrc: "https://github.com/user-attachments/assets/07f40033-6349-4518-8bb8-1a7565a1e2d4",
       socialLinks: [{ icon: Linkedin, href: "#" }],
     },
   ];
